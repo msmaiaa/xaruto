@@ -1,0 +1,25 @@
+{
+	"name": "xaruto",
+	"displayName": "xaruto",
+	"description": "Dark theme inspired by Tsoding's theme",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.78.0"
+	},
+	"scripts": {
+		"build": "vsce package",
+		"deploy": "vsce package && code --install-extension xaruto-0.0.1.vsix"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "xaruto",
+				"uiTheme": "vs-dark",
+				"path": "./themes/xaruto-color-theme.json"
+			}
+		]
+	}
+}
